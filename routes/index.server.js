@@ -1,15 +1,12 @@
-<!doctype html>
-<html>
-  <head>
-    <title>My website</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-        <header>
-      <div>My awesome website</div>
-    </header>
+import { html, htmlToResponse } from "mastro";
+import { Layout } from "../components/Layout.js";
 
-    <main>
+export const GET = () =>
+  htmlToResponse(
+    Layout({
+      title: 'Home',
+      children: html`
+
     <h1>Common HTML elements</h1>
     <p>
       Let's go through the most important HTML elements to
@@ -80,16 +77,6 @@
       therefore be a brief description of what's in the image.
       If the image is just decoration, you should use alt="".
     </p>
-
-    </main>
-
-    <footer>
-      <div>
-        Check us out
-        <a href="https://github.com/mastrojs/mastro">
-          on GitHub
-        </a>.
-      </div>
-    </footer>
-  </body>
-</html>
+ `
+  })
+);
