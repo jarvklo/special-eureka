@@ -15,5 +15,5 @@ export const GET = async (req) => {
 
 export const getStaticPaths = async () => {
   const posts = await readDir("data/posts/");
-  return posts.map(p => "/news/" + p.slice(0, -3) + "/");
+  return posts.map(p => "/special-eureka/news/" + p.slice(0, -3) + "/");
 }
