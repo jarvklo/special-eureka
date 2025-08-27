@@ -13,7 +13,6 @@ export const Layout = (props) =>
         ${Header()}
 
         <main>
-          <pre>Hello</pre>
           ${props.children}
         </main>
 
