@@ -4,7 +4,7 @@ import { Layout } from "../components/Layout.js";
 export const GET = () =>
   htmlToResponse(
     Layout({
-      title: 'HoMy awesome homepage',
+      title: 'Home',
       children: html`
 
     <h1>Common HTML elements</h1>
