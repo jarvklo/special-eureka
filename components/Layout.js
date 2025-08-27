@@ -7,7 +7,7 @@ export const Layout = (props) =>
     <html>
       <head>
         <title>${props.title}</title>
-        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="styles.css">
       </head>
       <body>
         ${Header()}
